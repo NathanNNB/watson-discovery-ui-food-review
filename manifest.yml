@@ -1,0 +1,14 @@
+---
+declared-services:
+  wdui-discovery-service:
+    label: discovery
+    plan: lite
+applications:
+- path: .
+  name: watson-discovery-store-food-review
+  memory: 512M
+  instances: 1
+  random-route: false
+  
+env:
+  OPTIMIZE_MEMORY: true
